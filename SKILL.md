@@ -149,8 +149,8 @@ Run **one query per team member** (the SQL engine rejects `IN (...)` on some col
 ```json
 {
   "included_objects": { "CAL: Opportunity Deal Sheet": ["Opportunity Owner", "Final Close Quarter", "Stage", "Forecast Category", "NNACV", "Close Date", "In Forecast?"] },
-  "query": "SELECT <opportunity_dim_col>, \"opportunity owner\", \"stage\", \"forecast category\", \"nnacv\", \"close date\", \"in forecast?\" FROM \"template sales forecasting.cal: opportunity deal sheet\" WHERE <opportunity_dim_col>_is_leaf = TRUE AND <hierarchy_dim_col> = :t5_member_or_leaf_constraint AND \"opportunity owner\" = :owner AND \"final close quarter\" = :qtr",
-  "parameters": { "owner": "Frazier, Tom", "qtr": "Q3 FY26" }
+  "query": "SELECT <opportunity_dim_col>, \"opportunity owner\", \"stage\", \"forecast category\", \"nnacv\", \"close date\", \"in forecast?\" FROM \"template sales forecasting.cal: opportunity deal sheet\" WHERE <opportunity_dim_col>_is_leaf = TRUE AND <hierarchy_dim_col> = :t5_member_or_leaf_constraint AND \"opportunity owner\" = :owner AND \"in forecast?\" = :in AND \"final close quarter\" = :qtr",
+  "parameters": { "owner": "Frazier, Tom", "in": "✔️", "qtr": "Q3 FY26" }
 }
 ```
 Rules:
