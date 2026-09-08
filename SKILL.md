@@ -9,7 +9,7 @@ Automates a three-part chained workflow for the Anaplan **Template Sales Forecas
    - the line item **"Opportunity Owner"** equals any member of the team from Part A, **AND**
    - the opportunity is **relevant to the current period** from Part B (i.e. **"Final Close Quarter"** = Current Quarter).
 
-Use this skill whenever the user asks to "filter opportunities by my team", "show my team's deals", "opportunities for the current period/quarter", or any combination of team-ownership + current-period filtering on the opportunity deal sheet.
+Use this skill whenever the user asks to "filter opportunities by my team", "show my team's deals", "opportunities for the current period/quarter", "analyse the risks" related to the closing or any combination of team-ownership + current-period filtering on the opportunity deal sheet.
 
 ### Anaplan objects used
 | Purpose | Object | Detail |
